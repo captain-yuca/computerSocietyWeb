@@ -1,0 +1,20 @@
+{
+  "name": "computerSocietyWeb",
+  "homepage": "https://github.com/captain-yuca/computerSocietyWeb",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "captain-yuca"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.3"
+  }
+}
