@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Portfolio | IEEE Computer Society - UPRM</title>
+    <title>Projects | IEEE Computer Society - UPRM</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -21,7 +22,9 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-</head><!--/head-->
+</head>
+<!--/head-->
+
 <body>
 
     <header id="header">
@@ -31,25 +34,27 @@
                     <div class="col-sm-6 col-xs-4">
                     </div>
                     <div class="col-sm-6 col-xs-8">
-                       <div class="social">
+                        <div class="social">
                             <ul class="social-share">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="https://www.facebook.com/computersociety.uprm"><i class="fa fa-facebook"></i></a></li>
+                                <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li> -->
                             </ul>
-                            <div class="search">
+                            <!-- <div class="search">
                                 <form role="form">
                                     <input type="text" class="search-form" autocomplete="off" placeholder="Search">
                                     <i class="fa fa-search"></i>
                                 </form>
-                           </div>
-                       </div>
+                           </div> -->
+                        </div>
                     </div>
                 </div>
-            </div><!--/.container-->
-        </div><!--/.top-bar-->
+            </div>
+            <!--/.container-->
+        </div>
+        <!--/.top-bar-->
 
         <nav class="navbar navbar-inverse" role="banner">
             <div class="container">
@@ -67,141 +72,91 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about-us.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
+                        <li class="active"><a href="portfolio.html">Projects</a></li>
                         <!-- <li><a href="blog.html">Blog</a></li>  -->
-                        <li><a href="contact-us.html">Contact</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
-            </div><!--/.container-->
-        </nav><!--/nav-->
+            </div>
+            <!--/.container-->
+        </nav>
+        <!--/nav-->
 
-    </header><!--/header-->
+    </header>
+    <!--/header-->
     <section id="portfolio">
         <div class="container">
             <div class="center">
-               <h2>Portfolio</h2>
-               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <h2>Projects</h2>
+                <p class="lead">Current projects being done in the IEEE Computer Society. If you are interested in joining one, please click on the desired project and follow the steps to take advantage of the opportunities.</p>
             </div>
 
 
             <ul class="portfolio-filter text-center">
                 <li><a class="btn btn-default active" href="#" data-filter="*">All Works</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".bootstrap">Creative</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".html">Photography</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".wordpress">Web Development</a></li>
-            </ul><!--/#portfolio-filter-->
+                <li><a class="btn btn-default" href="#" data-filter=".mobile">Mobile Applications</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".hardware">Hardware</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".webdev">Web Development</a></li>
+            </ul>
+            <!--/#portfolio-filter-->
 
             <div class="row">
                 <div class="portfolio-items">
-                    <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
+                    <div class="portfolio-item mobile col-xs-12 col-sm-4 col-md-3">
+                        <div href="#" class="recent-work-wrap" data-toggle="modal" data-target="#firstModal">
+                            <img class="img-responsive" src="images/portfolio/full/WOC.png" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--/.portfolio-item-->
+                                    <h3><a href="#">Whats On Campus</a></h3>
+                                    <p>Mobile Application</p>
+                                    <a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View Image</a>
+                                    <br>
+                                    <a class="preview" href="#" data-toggle="modal" data-target="#firstModal"><i class="fa fa-info"></i> Info</a>
 
-                    <div class="portfolio-item joomla bootstrap col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item2.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item2.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
                                 </div>
                             </div>
                         </div>
-                    </div><!--/.portfolio-item-->
+                    </div>
+                    <!--/.portfolio-item-->
 
-                    <div class="portfolio-item bootstrap wordpress col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">
+                    <div class="portfolio-item hardware mobile col-xs-12 col-sm-4 col-md-3">
+                        <div href="#" class="recent-work-wrap" data-toggle="modal" data-target="#secondModal">
+                            <img class="img-responsive" src="images/portfolio/full/3DPA.png" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item3.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                    <h3><a href="#">3D Printer Companion App</a></h3>
+                                    <p>Mobile Application</p>
+                                    <a class="preview" href="images/portfolio/full/3DPA.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View Image</a>
+                                    <br>
+                                    <a class="preview" href="#" data-toggle="modal" data-target="#secondModal"> <i class="fa fa-info"></i> Info</a>
                                 </div>
                             </div>
                         </div>
-                    </div><!--/.portfolio-item-->
+                    </div>
+                    <!--/.portfolio-item-->
 
-                    <div class="portfolio-item joomla wordpress apps col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item4.png" alt="">
+                    <div class="portfolio-item bootstrap webdev col-xs-12 col-sm-4 col-md-3">
+                        <div href="#" class="recent-work-wrap" data-toggle="modal" data-target="#thirdModal">
+                            <img class="img-responsive" src="images/portfolio/full/WebDev.png" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item4.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
+                                    <h3><a href="#">Full Stack Web Development</a></h3>
+                                    <p>Web Development</p>
+                                    <a class="preview" href="images/portfolio/full/WebDev.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View Image</a>
+                                    <br>
+                                    <a class="preview" href="#" data-toggle="modal" data-target="#thirdModal"><i class="fa fa-info"></i> Info</a>
                                 </div>
                             </div>
                         </div>
-                    </div><!--/.portfolio-item-->
-
-                    <div class="portfolio-item joomla html bootstrap col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item5.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item5.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--/.portfolio-item-->
-
-                    <div class="portfolio-item wordpress html apps col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item6.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item6.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--/.portfolio-item-->
-
-                    <div class="portfolio-item wordpress html col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item7.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item7.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--/.portfolio-item-->
-
-                    <div class="portfolio-item wordpress html bootstrap col-xs-12 col-sm-4 col-md-3">
-                        <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/recent/item8.png" alt="">
-                            <div class="overlay">
-                                <div class="recent-work-inner">
-                                    <h3><a href="#">Business theme</a></h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                    <a class="preview" href="images/portfolio/full/item8.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--/.portfolio-item-->
+                    </div>
+                    <!--/.portfolio-item-->
                 </div>
             </div>
         </div>
-    </section><!--/#portfolio-item-->
+    </section>
+    <!--/#portfolio-item-->
 
-    <section id="bottom">
+    <!-- <section id="bottom">
         <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="row">
                 <div class="col-md-3 col-sm-6">
@@ -217,7 +172,7 @@
                             <li><a href="#">Contact us</a></li>
                         </ul>
                     </div>
-                </div><!--/.col-md-3-->
+                </div>
 
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">
@@ -232,7 +187,7 @@
                             <li><a href="#">Billing system</a></li>
                         </ul>
                     </div>
-                </div><!--/.col-md-3-->
+                </div>
 
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">
@@ -247,7 +202,7 @@
                             <li><a href="#">Article Writing</a></li>
                         </ul>
                     </div>
-                </div><!--/.col-md-3-->
+                </div>
 
                 <div class="col-md-3 col-sm-6">
                     <div class="widget">
@@ -262,28 +217,108 @@
                             <li><a href="#">Laboris</a></li>
                         </ul>
                     </div>
-                </div><!--/.col-md-3-->
+                </div>
             </div>
         </div>
-    </section><!--/#bottom-->
+    </section> -->
+
+
+    <div class="modal fade" id="firstModal" tabindex="-1" role="dialog" aria-labelledby="firstModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="firstModalLabel">What's On Campus</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-12">
+                            Whats On Campus is an app designed to improve the communication between students and associations at universities. This app creates a plateform where all organizations can advertise their workshops and events. The concept is to collect everything that is happening on campus in one platform.
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <img src="images/portfolio/full/WOC.png" class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" role="button" class="btn btn-primary" href="contact-us.html">I'm Interested</a>
+                    <button type="button" role="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="secondModal" tabindex="-1" role="dialog" aria-labelledby="secondModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="secondModalLabel">3D Printer Companion App</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-12">
+                            The IEEE’s EMB Society is currently developing a 3D Printer as a project with the end goal of adapting the created system into a system that can print biological-related objects. This opens up the opportunity designing a mobile application that eases
+                            the usability of said system. This project will design, develop and implement an Android application in which users of the EMBS’s 3D printing system can utilize most of the printer's functionality remotely. This includes: the user
+                            can print, load CAD files, move the printer’s various axes remotely utilizing the app. The final output of the project will be an application in which the user can print remotely using CAD files from the app or SD card in the printer.
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <img src="images/portfolio/full/3DPA.png" class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" role="button" class="btn btn-primary" href="contact-us.html">I'm Interested</a>
+                    <button type="button" role="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="thirdModal" tabindex="-1" role="dialog" aria-labelledby="thirdModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="thirdModalLabel">Full Stack Web Development</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-12">
+                            <h4>Proyect proposal in development</h4>
+                            <p>Currently, we are seeking people interested in Full Stack Development. This includes Front-End Web Development, Back-End Web Development and other web technologies that might be implemented by the team. No expirience is required to participate in this proyect. Training for this proyect will be provided.</p>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <img src="images/portfolio/full/WebDev.png" class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" role="button" class="btn btn-primary" href="contact-us.html">I'm Interested</a>
+                    <button type="button" role="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                    Some elements of this site are &copy; 2016 <a target="_blank" href="https://www.ieee.org/" title="Institute of Electrical and Electronics Engineers">IEEE</a>. All Rights Reserved.
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="portfolio.html">Projects</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </footer><!--/#footer-->
+    </footer>
+    <!--/#footer-->
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -292,4 +327,5 @@
     <script src="js/main.js"></script>
     <script src="js/wow.min.js"></script>
 </body>
+
 </html>

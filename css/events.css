@@ -26,3 +26,6 @@ right: 0;
 .overlay {
 background-color: rgba(33,154,200,0.75);
 }
+.events strong, em, .small{
+  color: #DADADA
+}
