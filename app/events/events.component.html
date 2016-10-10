@@ -1,0 +1,85 @@
+<section id="services" class="service-item">
+
+        <div class="container events">
+            <div class="center wow fadeInDown">
+                <h2>Our Upcoming Events</h2>
+                <p class="lead">Details of our upcoming activities. Click the event to see more information. If you wish to see all of our events, <a href="events.html">click here.</a></p>
+            </div>
+            <div *ngFor="let eventRow of eventRows" class="row">
+                <div *ngFor="let event of eventRow.myEvents" class="col-md-4">
+                    <div class="thumbnail" data-toggle="modal" [attr.data-target]="'#'+event.id+'Modal'">
+                        <div class="overlay">
+                            <i class="fa fa-share md"></i>
+                        </div>
+                        <!-- Images must be 350x250-->
+                        <img class="img-responsive" alt="Image not Available" src="images/events/{{event.imageUrl}}.png">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h3><span class="label label-warning">{{event.date}}</span></h3>
+                        </div>
+                        <div class="col-sm-9">
+                            <strong>{{event.eventName}}</strong><br>
+                            <em>at {{event.location}}</em><br>
+                            <span class="small">{{event.time}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/#services-->
+    <section id="conatcat-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <div class="media contact-info wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+                        <div class="pull-left">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="media-body">
+                            <h2>Any Questions?</h2>
+                            <p>Send an email to <b>computersociety@uprm.edu</b>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div *ngFor="let event of events">
+    <div class="modal fade" [attr.id]="event.id + 'Modal'" tabindex="-1" role="dialog" [attr.aria-labelledby]="event.id +'ModalLabel'">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" [attr.id]="event.id + 'ModalLabel'">{{event.eventName}}</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-12">
+                            <p *ngIf="event.moreInfoRequired != true">
+                            {{event.description}}
+                            </p>
+                            <h3 *ngIf="event.moreInfoRequired == true">
+                            More info will be released later.
+                        </h3>
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <img src="images/events/{{event.imageUrl}}.png" class="img-thumbnail">
+                            <h3><span class="label label-warning">{{event.date}}</span></h3>
+                            <b>at {{event.location}}</b><br>
+                            <p>{{event.time}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" role="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

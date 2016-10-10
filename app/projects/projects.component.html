@@ -1,0 +1,131 @@
+<section id="portfolio">
+        <div class="container">
+            <div class="center">
+                <h2>Projects</h2>
+                <p class="lead">Current projects being done in the IEEE Computer Society. If you are interested in <b>joining one</b> or would want <b>more information</b>, please <b>click on the desired project</b> and take advantage of the opportunities.</p>
+            </div>
+
+
+            <ul class="portfolio-filter text-center">
+                <li><a class="btn btn-default active" href="#" data-filter="*">All Works</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".mobile">Mobile Applications</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".hardware">Hardware</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".webdev">Web Development</a></li>
+            </ul>
+            <!--/#portfolio-filter-->
+
+            <div class="row">
+                <div class="portfolio-items">
+                    <div *ngFor = "let project of projects" class="portfolio-item mobile col-xs-12 col-sm-4 col-md-3">
+                        <div href="#" class="recent-work-wrap" data-toggle="modal" [attr.data-target]="'#'+project.id+'Modal'">
+                            <img class="img-responsive" src="images/portfolio/full/{{project.imageUrl}}.png" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <h3><a href="#">{{project.projectName}}</a></h3>
+                                    <p>{{project.category}}</p>
+                                    <a class="preview" href="images/portfolio/full/{{project.imageUrl}}.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View Image</a>
+                                    <br>
+                                    <a class="preview" href="#" data-toggle="modal" [attr.data-target]="'#'+project.id+'Modal'"><i class="fa fa-info"></i> Info</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#portfolio-item-->
+
+    <!-- <section id="bottom">
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">We are hiring</a></li>
+                            <li><a href="#">Meet the team</a></li>
+                            <li><a href="#">Copyright</a></li>
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">Faq</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Refund policy</a></li>
+                            <li><a href="#">Ticket system</a></li>
+                            <li><a href="#">Billing system</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>Developers</h3>
+                        <ul>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">SEO Marketing</a></li>
+                            <li><a href="#">Theme</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Email Marketing</a></li>
+                            <li><a href="#">Plugin Development</a></li>
+                            <li><a href="#">Article Writing</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="widget">
+                        <h3>Our Partners</h3>
+                        <ul>
+                            <l><a href="#">Adipisicing Elit</a></li>
+                            <li><a href="#">Eiusmod</a></li>
+                            <li><a href="#">Tempor</a></li>
+                            <li><a href="#">Veniam</a></li>
+                            <li><a href="#">Exercitation</a></li>
+                            <li><a href="#">Ullamco</a></li>
+                            <li><a href="#">Laboris</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+<div *ngFor="let project of projects">
+    <div class="modal fade" [attr.id]="project.id + 'Modal'" tabindex="-1" role="dialog" [attr.aria-labelledby]="project.id +'ModalLabel'">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" [attr.id]="project.id + 'ModalLabel'">What's On Campus</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-8 col-xs-12">
+                            {{project.description}}
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <img src="images/portfolio/full/{{project.imageUrl}}.png" class="img-thumbnail">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" role="button" class="btn btn-primary" href="/contact-us">I'm Interested</a>
+                    <button type="button" role="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
